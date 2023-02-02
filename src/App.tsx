@@ -1,9 +1,10 @@
-import { Accessor, Component, createEffect, createSignal, Setter } from 'solid-js';
+import { Accessor, Component, Setter } from 'solid-js';
 
 import logo from './assets/logo.svg';
 import styles from './App.module.css';
 import Mine, { state, setState, color, setColor } from './mine';
 import DonutChartExample from '../examples/DonutChartExample';
+import PieChartExample from '../examples/PieChartExample';
 
 type colorState = { color: Accessor<string>, setColor: Setter<string> }
 
@@ -12,6 +13,8 @@ const App: Component = () => {
   return (
     <div class={styles.App}>
       <DonutChartExample />
+      <br />
+      <PieChartExample />
       <br />
       <Mine />
       <br />

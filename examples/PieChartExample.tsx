@@ -1,4 +1,5 @@
-import SolidDonutChart from "../chartsLibrary/SolidDonutChart";
+import DonutChart from "../chartsLibrary/SolidDonutChart";
+import SolidPieChart from "../chartsLibrary/SolidPieChart";
 
 const data = [
     {
@@ -27,7 +28,7 @@ const data = [
     }
 ]
 const options = {
-    "title": "Donut Chart",
+    "title": "Pie Chart",
     "resizable": true,
     "donut": {
         "center": {
@@ -37,10 +38,10 @@ const options = {
     "height": "400px"
 }
 
-export default function DonutChartExample() {
+export default function PieChartExample() {
     return (
         <div>
-            <SolidDonutChart {...{ data, options }} />
+            <SolidPieChart {...{ data, options }} />
         </div>
     );
 }

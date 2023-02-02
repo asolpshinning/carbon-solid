@@ -5,7 +5,7 @@ import { ChartConfig, PieChartOptions } from "@carbon/charts/interfaces";
 
 let divRef: HTMLDivElement = <div></div> as HTMLDivElement;
 
-export default function DoughNut(props: ChartConfig<PieChartOptions>) {
+export default function SolidDonutChart(props: ChartConfig<PieChartOptions>) {
 
     onMount(() => {
         let newChartInstance = new DonutChart(divRef, props);
