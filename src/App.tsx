@@ -1,32 +1,32 @@
 import { Accessor, Component, createEffect, createSignal, Setter } from 'solid-js';
 
-import logo from './logo.svg';
+import logo from './assets/logo.svg';
 import styles from './App.module.css';
 import Mine, { state, setState, color, setColor } from './mine';
-import DoughNut from './DoughNut';
+import DonutChartExample from '../examples/DonutChartExample';
 
-type colorState = {color: Accessor<string>, setColor: Setter<string>}
+type colorState = { color: Accessor<string>, setColor: Setter<string> }
 
 const App: Component = () => {
 
   return (
     <div class={styles.App}>
-      <DoughNut/>
-      <br/>
-      <Mine/>
-      <br/>
-      <button 
-        style = {{"background-color": state.style.color /* color() */}}
+      <DonutChartExample />
+      <br />
+      <Mine />
+      <br />
+      <button
+        style={{ "background-color": state.style.color /* color() */ }}
         onClick={
           () => {
-            setState("style", {color: "blue"});
+            setState("style", { color: "blue" });
             //setColor("yellow");
           }
         }>Change Theme
       </button>
-      <br/>
-      <h2 style = {{color: color()}}>`Just showing Color Change`</h2>
-      <br/>
+      <br />
+      <h2 style={{ color: color() }}>`Just showing Color Change`</h2>
+      <br />
       <header class={styles.header}>
         <img src={logo} class={styles.logo} alt="logo" />
         <p>
@@ -41,7 +41,7 @@ const App: Component = () => {
           Learn Solid
         </a>
       </header>
-      
+
     </div>
   );
 };
