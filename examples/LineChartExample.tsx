@@ -1,5 +1,9 @@
-import DonutChart from "../chartsLibrary/SolidDonutChart";
-import SolidPieChart from "../chartsLibrary/SolidPieChart";
+import { SolidLineChart } from "../chartsLibrary";
+import {
+  ChartConfig,
+  LineChartOptions,
+  LollipopChartOptions,
+} from "@carbon/charts/interfaces";
 
 const data = [
   {
@@ -124,20 +128,29 @@ const data = [
   },
 ];
 const options = {
-  title: "Pie Chart",
-  resizable: true,
-  donut: {
-    center: {
-      label: "Browsers",
+  title: "Line (time series)",
+  axes: {
+    bottom: {
+      title: "2019 Annual Sales Figures",
+      mapsTo: "date",
+      scaleType: "time",
+    },
+    left: {
+      mapsTo: "value",
+      title: "Conversion rate",
+      scaleType: "linear",
     },
   },
+  curve: "curveMonotoneX",
   height: "400px",
 };
 
-export default function PieChartExample() {
+type Option = ChartConfig<LineChartOptions>;
+
+export default function LineChart() {
   return (
     <div>
-      <SolidPieChart {...{ data, options }} />
+      <SolidLineChart {...({ data, options } as Option)} />
     </div>
   );
 }

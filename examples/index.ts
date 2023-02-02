@@ -1,4 +1,12 @@
-export {default as DonutChartExample} from './DonutChartExample';
-export {default as PieChartExample} from './PieChartExample';
-export {default as GaugeChartExample} from './GaugeChartExample';
-export {default as HistogramExample} from './HistogramChartExample';
+export { default as DonutChartExample } from './DonutChartExample';
+export { default as PieChartExample } from './PieChartExample';
+export { default as GaugeChartExample } from './GaugeChartExample';
+export { default as HistogramExample } from './HistogramChartExample';
+export { default as LineChartExample } from "./LineChartExample";
+export { default as LollipopChartExample } from "./LollipopChartExample";
+export { default as RadarChartExample } from "./RadarChartExample";
+export { default as ScatterChartExample } from "./ScatterChartExample";
+export { default as SparklineChartExample } from "./SparklineChartExample";
+export { default as StepChartExample } from "./StepChartExample";
+export { default as WordCloudChartExample } from "./WordCloudChartExample";
+export { default as AlluvialChartExample } from "./AlluvialChartExample";

@@ -1,5 +1,5 @@
-import DonutChart from "../chartsLibrary/SolidDonutChart";
-import SolidPieChart from "../chartsLibrary/SolidPieChart";
+import { SolidScatterChart } from "../chartsLibrary";
+import { ChartConfig, ScatterChartOptions } from "@carbon/charts/interfaces";
 
 const data = [
   {
@@ -123,21 +123,28 @@ const data = [
     surplus: 6939.9668614677,
   },
 ];
+
 const options = {
-  title: "Pie Chart",
-  resizable: true,
-  donut: {
-    center: {
-      label: "Browsers",
+  title: "Scatter (time series)",
+  axes: {
+    bottom: {
+      title: "2019 Annual Sales Figures",
+      scaleType: "time",
+      mapsTo: "date",
+    },
+    left: {
+      mapsTo: "value",
     },
   },
   height: "400px",
 };
 
-export default function PieChartExample() {
+type Option = ChartConfig<ScatterChartOptions>;
+
+export default function ScatterChart() {
   return (
     <div>
-      <SolidPieChart {...{ data, options }} />
+      <SolidScatterChart {...({ data, options } as Option)} />
     </div>
   );
 }

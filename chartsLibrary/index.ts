@@ -1,4 +1,13 @@
-export {default as SolidDonutChart} from './SolidDonutChart';
-export {default as SolidPieChart} from './SolidPieChart';
-export {default as SolidGaugeChart} from './SolidGaugeChart';
-export {default as SolidHistogram} from './SolidHistogram';
+export { default as SolidDonutChart } from './SolidDonutChart';
+export { default as SolidPieChart } from './SolidPieChart';
+export { default as SolidGaugeChart } from './SolidGaugeChart';
+export { default as SolidHistogram } from './SolidHistogram';
+export { default as SolidLineChart } from "./SolidLineChart";
+export { default as SolidLollipopChart } from "./SolidLollipopChart";
+export { default as SolidMeterChart } from "./SolidMeterChart";
+export { default as SolidRadarChart } from "./SolidRadarChart";
+export { default as SolidScatterChart } from "./SolidScatterChart";
+export { default as SolidSparklineChart } from "./SolidSparklineChart";
+export { default as SolidStepChart } from "./SolidStepChart";
+export { default as SolidWordCloudChart } from "./SolidWordCloudChart";
+export { default as SolidAlluvialChart } from "./SolidAlluvialChart";
