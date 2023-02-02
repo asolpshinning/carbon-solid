@@ -1,4 +1,4 @@
-import SolidDonutChart from "../chartsLibrary/SolidDonutChart";
+import { SolidDonutChart } from "../chartsLibrary";
 
 const data = [
     {
