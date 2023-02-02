@@ -3,8 +3,8 @@ import { Accessor, Component, Setter } from 'solid-js';
 import logo from './assets/logo.svg';
 import styles from './App.module.css';
 import Mine, { state, setState, color, setColor } from './mine';
-import DonutChartExample from '../examples/DonutChartExample';
-import PieChartExample from '../examples/PieChartExample';
+import { DonutChartExample, GaugeChartExample, PieChartExample } from '../examples'
+import HistogramChartExample from '../examples/HistogramChartExample';
 
 type colorState = { color: Accessor<string>, setColor: Setter<string> }
 
@@ -14,7 +14,15 @@ const App: Component = () => {
     <div class={styles.App}>
       <DonutChartExample />
       <br />
+      <br />
       <PieChartExample />
+      <br />
+      <br />
+      <GaugeChartExample />
+      <br />
+      <br />
+      <HistogramChartExample />
+      <br />
       <br />
       <Mine />
       <br />
