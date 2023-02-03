@@ -11,3 +11,4 @@ export { default as SolidSparklineChart } from "./SolidSparklineChart";
 export { default as SolidStepChart } from "./SolidStepChart";
 export { default as SolidWordCloudChart } from "./SolidWordCloudChart";
 export { default as SolidAlluvialChart } from "./SolidAlluvialChart";
+export { default as SolidHeatmapChart } from "./SolidHeatmapChart";

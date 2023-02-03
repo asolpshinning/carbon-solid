@@ -1,4 +1,5 @@
 import { Accessor, Component, Setter } from "solid-js";
+import { Routes, Route } from "@solidjs/router/dist/components";
 import "@carbon/charts/styles.css";
 import logo from "./assets/logo.svg";
 import styles from "./App.module.css";
@@ -13,7 +14,7 @@ import {
   ScatterChartExample,
   SparklineChartExample,
   StepChartExample,
-  WordCloudChartExample,
+  MeterChartExample,
   AlluvialChartExample,
 } from "../examples";
 import HistogramChartExample from "../examples/HistogramChartExample";
@@ -93,7 +94,7 @@ const App: Component = () => {
         <br />
         <StepChartExample />
         <TooMuchBreaklines />
-        <WordCloudChartExample />
+        {/* <MeterChartExample /> */}
         <AlluvialChartExample />
       </div>
       <TooMuchBreaklines />

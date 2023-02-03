@@ -10,3 +10,4 @@ export { default as SparklineChartExample } from "./SparklineChartExample";
 export { default as StepChartExample } from "./StepChartExample";
 export { default as WordCloudChartExample } from "./WordCloudChartExample";
 export { default as AlluvialChartExample } from "./AlluvialChartExample";
+export { default as MeterChartExample } from "./MeterChartExample";

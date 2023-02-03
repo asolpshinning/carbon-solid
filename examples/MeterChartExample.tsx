@@ -30,15 +30,14 @@ const options = {
     },
   },
   height: "100px",
-};
+} as MeterChartOptions;
 
-type Option = ChartConfig<MeterChartOptions>;
+type Option = MeterChartOptions;
 
 export default function MeterChartExample() {
   return (
     <div>
-      <SolidMeterChart {...({ data, options } as Option)} />{" "}
-      {/* issue posted on repo, I took a snapshot on this line and I put it in the issue */}
+      <SolidMeterChart {...{ data, options: options }} />
     </div>
   );
 }
