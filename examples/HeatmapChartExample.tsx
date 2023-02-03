@@ -4,6 +4,7 @@ import {
   HeatmapChartOptions,
   LineChartOptions,
   LollipopChartOptions,
+  MeterChartOptions,
 } from "@carbon/charts/interfaces";
 
 const data = [
@@ -637,7 +638,9 @@ type Option = HeatmapChartOptions;
 export default function LineChart() {
   return (
     <div>
-      <SolidHeatmapChart {...{ data, options: options as Option }} />
+      <SolidHeatmapChart
+        {...{ data, options: options as HeatmapChartOptions }}
+      />
     </div>
   );
 }

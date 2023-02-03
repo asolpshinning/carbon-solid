@@ -12,3 +12,6 @@ export { default as SolidStepChart } from "./SolidStepChart";
 export { default as SolidWordCloudChart } from "./SolidWordCloudChart";
 export { default as SolidAlluvialChart } from "./SolidAlluvialChart";
 export { default as SolidHeatmapChart } from "./SolidHeatmapChart";
+export { default as SolidTreeChart } from "./SolidTreeChart";
+export { default as SolidTreeMapChart } from "./SolidTreemapChart";
+export { default as SolidCirclePackChart } from "./SolidCirclePackChart";

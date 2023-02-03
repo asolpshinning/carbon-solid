@@ -16,8 +16,12 @@ import {
   StepChartExample,
   MeterChartExample,
   AlluvialChartExample,
+  TreeChartExample,
+  TreemapChartExample,
+  CirclePackChartExample,
 } from "../examples";
 import HistogramChartExample from "../examples/HistogramChartExample";
+import CarbonCharts from "@carbon/charts";
 
 type colorState = { color: Accessor<string>; setColor: Setter<string> };
 
@@ -96,7 +100,20 @@ const App: Component = () => {
         <TooMuchBreaklines />
         {/* <MeterChartExample /> */}
         <AlluvialChartExample />
+        <br />
+        <br />
+        <br />
+        <TreeChartExample />
+        <br />
+        <br />
+        <br />
+        <TreemapChartExample />
+        <br />
+        <br />
+        <br />
+        <CirclePackChartExample />
       </div>
+      <TooMuchBreaklines />
       <TooMuchBreaklines />
       <TooMuchBreaklines />
       <TooMuchBreaklines />

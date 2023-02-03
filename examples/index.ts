@@ -11,3 +11,7 @@ export { default as StepChartExample } from "./StepChartExample";
 export { default as WordCloudChartExample } from "./WordCloudChartExample";
 export { default as AlluvialChartExample } from "./AlluvialChartExample";
 export { default as MeterChartExample } from "./MeterChartExample";
+export { default as HeatmapChartExample } from "./HeatmapChartExample";
+export { default as TreeChartExample } from "./TreeChartExample";
+export { default as TreemapChartExample } from "./TreemapChartExample";
+export { default as CirclePackChartExample } from "./CirclePackChartExample";

@@ -4,7 +4,7 @@ import { ChartConfig, AreaChartOptions } from "@carbon/charts/interfaces";
 
 let divRef: HTMLDivElement = (<div></div>) as HTMLDivElement;
 
-export default function SolidLineChart(props: ChartConfig<AreaChartOptions>) {
+export default function SolidSparkline(props: ChartConfig<AreaChartOptions>) {
   onMount(() => {
     var newChartInstance = new AreaChart(divRef, props);
   });
