@@ -2,6 +2,14 @@
   "name": "vite-template-solid",
   "version": "0.0.0",
   "description": "",
+  "contributors": [
+    {
+      "name": "David Akin"
+    },
+    {
+      "name": "Sunday Akin"
+    }
+  ],
   "scripts": {
     "start": "vite",
     "dev": "vite",

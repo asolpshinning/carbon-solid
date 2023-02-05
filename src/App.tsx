@@ -1,5 +1,4 @@
 import { Accessor, Component, Setter } from "solid-js";
-import { Routes, Route } from "@solidjs/router/dist/components";
 import "@carbon/charts/styles.css";
 import logo from "./assets/logo.svg";
 import styles from "./App.module.css";
@@ -14,14 +13,14 @@ import {
   ScatterChartExample,
   SparklineChartExample,
   StepChartExample,
-  MeterChartExample,
   AlluvialChartExample,
   TreeChartExample,
   TreemapChartExample,
   CirclePackChartExample,
+  WordCloudChartExample,
+  HeatmapChartExample,
 } from "../examples";
 import HistogramChartExample from "../examples/HistogramChartExample";
-import CarbonCharts from "@carbon/charts";
 
 type colorState = { color: Accessor<string>; setColor: Setter<string> };
 
@@ -98,7 +97,6 @@ const App: Component = () => {
         <br />
         <StepChartExample />
         <TooMuchBreaklines />
-        {/* <MeterChartExample /> */}
         <AlluvialChartExample />
         <br />
         <br />
@@ -112,14 +110,15 @@ const App: Component = () => {
         <br />
         <br />
         <CirclePackChartExample />
+        <br />
+        <br />
+        <br />
+        <WordCloudChartExample />
+        <br />
+        <br />
+        <br />
+        <HeatmapChartExample />
       </div>
-      <TooMuchBreaklines />
-      <TooMuchBreaklines />
-      <TooMuchBreaklines />
-      <TooMuchBreaklines />
-      <TooMuchBreaklines />
-      <TooMuchBreaklines />
-      <TooMuchBreaklines />
       <TooMuchBreaklines />
       <div>
         <Mine />
