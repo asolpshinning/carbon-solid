@@ -1,3 +1,3 @@
-# What is this?
+# About the Project
 
-This is just a package including some package-testing Solid.js code that is Carbon for Solid.js.
+Working on porting most or all carbon components to solidJS in partnership with my son (8-year old). This will be a good attempt as one of his software engineering training projects.
